@@ -260,6 +260,9 @@ namespace Intersect.Server.Maps
 
             MapItems.Add(mapItem);
             PacketSender.SendMapItemUpdate(Id, MapItems.Count - 1);
+
+            // If this item has a defined drop animation, play it.
+            if (itemBase.DropAnimationId != Guid.Empty) PacketSender.SendAnimationToProximity(itemBase.DropAnimationId, -1, Guid.Empty, Id, (byte)x, (byte)y, (sbyte)Directions.Down);
         }
 
         private void SpawnAttributeItem(int x, int y)

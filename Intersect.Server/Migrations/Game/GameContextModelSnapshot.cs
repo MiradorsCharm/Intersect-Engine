@@ -215,11 +215,16 @@ namespace Intersect.Server.Migrations.Game
 
                     b.Property<bool>("DestroySpell");
 
-                    b.Property<Guid>("EquipmentAnimationId").HasColumnName("EquipmentAnimation");
+                    b.Property<Guid>("DropAnimationId")
+                        .HasColumnName("DropAnimation");
+
+                    b.Property<Guid>("EquipmentAnimationId")
+                        .HasColumnName("EquipmentAnimation");
 
                     b.Property<int>("EquipmentSlot");
 
-                    b.Property<Guid>("EventId").HasColumnName("Event");
+                    b.Property<Guid>("EventId")
+                        .HasColumnName("Event");
 
                     b.Property<string>("FemalePaperdoll");
 
