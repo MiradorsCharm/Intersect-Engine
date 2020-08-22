@@ -16,6 +16,8 @@ namespace Intersect.Client.Items
 
         public bool VisibleToAll;
 
+        public float hasFallen;
+
         public MapItemInstance() : base()
         {
         }
