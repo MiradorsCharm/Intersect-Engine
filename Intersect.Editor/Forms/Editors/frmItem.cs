@@ -367,7 +367,6 @@ namespace Intersect.Editor.Forms.Editors
                 // Drop Animation
                 cmbDropAnimation.SelectedIndex = AnimationBase.ListIndex(mEditorItem.DropAnimationId) + 1;
 
-
                 //External References
                 cmbProjectile.SelectedIndex = ProjectileBase.ListIndex(mEditorItem.ProjectileId) + 1;
                 cmbAnimation.SelectedIndex = AnimationBase.ListIndex(mEditorItem.AnimationId) + 1;

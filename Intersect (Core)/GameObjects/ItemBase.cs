@@ -235,7 +235,6 @@ namespace Intersect.GameObjects
              set => DropAnimationId = value?.Id ?? Guid.Empty;
          }
 
-
         /// <inheritdoc />
         public string Folder { get; set; } = "";
 
