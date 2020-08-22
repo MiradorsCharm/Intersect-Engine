@@ -510,10 +510,6 @@
     <Compile Include="Migrations\Game\20200404174804_CraftRequirementsv2.Designer.cs">
       <DependentUpon>20200404174804_CraftRequirementsv2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Game\20200401161115_ItemDropAnimations.cs" />
-    <Compile Include="Migrations\Game\20200401161115_ItemDropAnimations.Designer.cs">
-      <DependentUpon>20200401161115_ItemDropAnimations.cs</DependentUpon>
-    </Compile>
     <Compile Include="Networking\Client.cs" />
     <Compile Include="Entities\Npc.cs" />
     <Compile Include="Networking\Helpers\NetDebug.cs" />

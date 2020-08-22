@@ -224,17 +224,6 @@ namespace Intersect.GameObjects
                                    ItemType != ItemTypes.Equipment &&
                                    ItemType != ItemTypes.Bag;
 
-        [Column("DropAnimation")]
-        public Guid DropAnimationId { get; set; }
-
-         [NotMapped]
-         [JsonIgnore]
-         public AnimationBase DropAnimation
-        {
-             get => AnimationBase.Get(DropAnimationId);
-             set => DropAnimationId = value?.Id ?? Guid.Empty;
-         }
-
         /// <inheritdoc />
         public string Folder { get; set; } = "";
 
