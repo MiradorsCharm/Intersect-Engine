@@ -75,6 +75,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Intersect.Client.Framework\Intersect.Client.Framework.csproj">
+      <Project>{40973f13-3339-4548-9008-ff76a0c8cd79}</Project>
+      <Name>Intersect.Client.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Intersect.Client\Intersect.Client.csproj">
       <Project>{2240f3dd-3694-4606-b181-f204cbbcb971}</Project>
       <Name>Intersect.Client</Name>
