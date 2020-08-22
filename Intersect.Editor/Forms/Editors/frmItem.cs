@@ -138,6 +138,11 @@ namespace Intersect.Editor.Forms.Editors
             nudMR.Minimum = -Options.MaxStatValue;
             nudSpd.Minimum = -Options.MaxStatValue;
 
+            //Drop Sound
+            cmbDropAnimation.Items.Clear();
+            cmbDropAnimation.Items.Add(Strings.General.none);
+            cmbDropAnimation.Items.AddRange(AnimationBase.Names);
+
             InitLocalization();
             UpdateEditor();
         }
@@ -255,6 +260,9 @@ namespace Intersect.Editor.Forms.Editors
 
             cmbConsume.Items.Add(Strings.Combat.exp);
 
+            // Item Drop Animation
+            lblDropAnimation.Text = Strings.ItemEditor.dropanimation;
+
             //Searching/Sorting
             btnChronological.ToolTipText = Strings.ItemEditor.sortchronologically;
             txtSearch.Text = Strings.ItemEditor.searchplaceholder;
@@ -355,6 +363,10 @@ namespace Intersect.Editor.Forms.Editors
 
                 cmbDamageType.SelectedIndex = mEditorItem.DamageType;
                 cmbScalingStat.SelectedIndex = mEditorItem.ScalingStat;
+
+                // Drop Animation
+                cmbDropAnimation.SelectedIndex = AnimationBase.ListIndex(mEditorItem.DropAnimationId) + 1;
+
 
                 //External References
                 cmbProjectile.SelectedIndex = ProjectileBase.ListIndex(mEditorItem.ProjectileId) + 1;
@@ -886,6 +898,11 @@ namespace Intersect.Editor.Forms.Editors
         private void cmbRarity_SelectedIndexChanged(object sender, EventArgs e)
         {
             mEditorItem.Rarity = cmbRarity.SelectedIndex;
+        }
+
+        private void cmbDropAnimation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            mEditorItem.DropAnimation = AnimationBase.Get(AnimationBase.IdFromList(cmbDropAnimation.SelectedIndex - 1));
         }
 
         #region "Item List - Folders, Searching, Sorting, Etc"

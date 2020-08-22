@@ -235,6 +235,11 @@ namespace Intersect.Server.Migrations.Game
 
                     b.Property<bool>("DestroySpell");
 
+                    b.Property<Guid>("DropAnimationId")
+                        .HasColumnName("DropAnimation");
+
+                    b.Property<Guid>("EquipmentAnimationId")
+                        .HasColumnName("EquipmentAnimation");
                     b.Property<Guid>("EquipmentAnimationId")
                         .HasColumnName("EquipmentAnimation");
 
