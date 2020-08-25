@@ -8,11 +8,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Intersect Server")]
-[assembly: AssemblyDescription("Game Server - Part of the Intersect 2D Game Creation Suite")]
-[assembly: AssemblyProduct("Intersect Game Engine")]
-[assembly: AssemblyCompany("Ascension Game Development")]
-[assembly: AssemblyCopyright("Copyright © Ascension Game Dev 2020")]
+[assembly: AssemblyTitle("Mirador Online Server")]
+[assembly: AssemblyDescription("Mirador Game Server")]
+[assembly: AssemblyProduct("Mirador Gaming Engine")]
+[assembly: AssemblyCompany("Mirador Gaming")]
+[assembly: AssemblyCopyright("Copyright © Mirador Gaming 2020")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyTrademark("")]
