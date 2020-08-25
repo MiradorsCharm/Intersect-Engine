@@ -330,6 +330,7 @@ namespace Intersect.Client.Networking
             en.Dir = packet.Direction;
             en.Passable = packet.Passable;
             en.HideName = packet.HideName;
+            en.Running = packet.Run;
         }
 
         //EntityLeftPacket
@@ -463,6 +464,7 @@ namespace Intersect.Client.Networking
             var y = packet.Y;
             var dir = packet.Direction;
             var correction = packet.Correction;
+            en.Running = packet.Run;
             if ((en.CurrentMap != map || en.X != x || en.Y != y) &&
                 (en != Globals.Me || en == Globals.Me && correction) &&
                 en.Dashing == null)

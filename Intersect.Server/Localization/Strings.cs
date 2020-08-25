@@ -738,10 +738,10 @@ namespace Intersect.Server.Localization
                 @"For help, support, and updates visit: https://www.ascensiongamedev.com";
 
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] [NotNull]
-            public readonly LocalizedString tagline = @"                          free 2d orpg engine";
+            public readonly LocalizedString tagline = @"";
 
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] [NotNull]
-            public readonly LocalizedString title = @"Intersect Server";
+            public readonly LocalizedString title = @"Mirador Online Game Server";
 
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] [NotNull]
             public readonly LocalizedString version = @"Version {00}";
@@ -965,10 +965,10 @@ namespace Intersect.Server.Localization
         {
 
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] [NotNull]
-            public readonly LocalizedString copyright = "Copyright (C) 2020 Ascension Game Dev, All Rights Reserved";
+            public readonly LocalizedString copyright = "Copyright (C) 2020 Mirador Online, All Rights Reserved";
 
             [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] [NotNull]
-            public readonly LocalizedString product = @"Intersect Game Engine";
+            public readonly LocalizedString product = @"Mirador Online Game Server";
 
         }
 

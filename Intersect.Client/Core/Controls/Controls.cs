@@ -87,6 +87,7 @@ namespace Intersect.Client.Core.Controls
             CreateControlMap(Control.OpenDebugger, Keys.F2, Keys.None);
             CreateControlMap(Control.OpenAdminPanel, Keys.Insert, Keys.None);
             CreateControlMap(Control.ToggleGui, Keys.F11, Keys.None);
+            CreateControlMap(Control.Running, Keys.Z, Keys.None);
         }
 
         public void Save()
