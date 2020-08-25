@@ -2,7 +2,7 @@
 
 namespace Intersect.Admin.Actions
 {
-
+    
     public abstract class AdminAction
     {
 

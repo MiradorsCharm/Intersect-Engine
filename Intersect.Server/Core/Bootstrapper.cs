@@ -40,6 +40,7 @@ namespace Intersect.Server.Core
 
         public static void Start(params string[] args)
         {
+            Console.Title = "Mirador Online Game Server";
             var commandLineOptions = ParseCommandLineArgs(args);
             if (!string.IsNullOrWhiteSpace(commandLineOptions.WorkingDirectory))
             {
