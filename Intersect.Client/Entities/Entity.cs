@@ -1742,8 +1742,8 @@ namespace Intersect.Client.Entities
             var targetTex = Globals.ContentManager.GetTexture(GameContentManager.TextureType.Misc, "target.png");
             if (targetTex != null)
             {
-                destRectangle.X = GetCenterPos().X - (int) targetTex.GetWidth() / 4;
-                destRectangle.Y = GetCenterPos().Y - (int) targetTex.GetHeight() / 2;
+                destRectangle.X = (int)Math.Ceiling(GetCenterPos().X) - (int) targetTex.GetWidth() / 4;
+                destRectangle.Y = (int)Math.Ceiling(GetCenterPos().Y) - (int) targetTex.GetHeight() / 2;
 
                 srcRectangle = new FloatRect(
                     priority * (int) targetTex.GetWidth() / 2, 0, (int) targetTex.GetWidth() / 2,
