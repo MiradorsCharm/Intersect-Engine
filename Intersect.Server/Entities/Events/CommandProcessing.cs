@@ -1282,6 +1282,7 @@ namespace Intersect.Server.Entities.Events
             if (player != null)
             {
                 input = input.Replace(Strings.Events.playernamecommand, player.Name);
+                input = input.Replace(Strings.Events.playerclasscommand, ClassBase.GetName(player.ClassId));
                 if (instance != null)
                 {
                     if (instance.PageInstance != null)
